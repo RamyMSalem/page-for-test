@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         /* = components ================================================== */
         * {
@@ -167,7 +166,7 @@
                 background-color: #F0EDFF;
             }
         }
-        .login .others .social {
+        .login .others .social a{
             border: 1px solid #F0EDFF;
             border-radius: 10px;
             padding: 10px ;
@@ -176,13 +175,16 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
+            text-decoration: none;
         }
         .login .others .social img {
             width: 30px;
         }
+        /* = Image Section ==================================================== */
         .image {
             position: relative;
             width: 100%;
+            min-height: 100vb;
             background-image: url("images/background-pic.png");
             background-color: #9687F4;
             background-size: 250%;
@@ -274,13 +276,18 @@
             </form>
             <div class="others section">
                 <p class="main"><span>Login </span>With Others</p>
+                <!-- The Facebook and Google links have been placed instead of the registration links -->
                 <div class="social">
-                    <img src="images/google-logo.png" alt="google logo">
-                    <p>Login With <span>google</span></p>
+                    <a href="https://www.google.com/" target="_blank">
+                        <img src="https://s3-alpha-sig.figma.com/img/8e42/4139/9baefbe8f8feffab0fe67682e140e1b1?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I0mx6EXIx1G5KbS4By2Bg8vUhFNBGL-UnOuUG4IHr968NgrBC0mnq-bbKv4vvD1nHfI7MySFt3qj4Bm~iXxDVJS32TuSfRhNuEVwcpZXF1pAWCLNyutEsQkFVY-SGUcEfLtkaXry-Vn26ZknvROTikzGrKicptIbEZmto9PKmGw5PITXXJq1AQjjzeEzcZ0RHuZ854huo~HFdRyPan10ukLl0FRsmPlBcLwoiPHxol1jOQ21kkUfeZRb4wqkBeuQMa3vK0jehL6VP8cDkyoAqFLTQZCp3FPcrtjRsQGGiXdUOzy~78FWloWMYqRJl1~tkzxlKiXe5z7UwVTDOE4ZYQ__" alt="google logo">
+                        <p>Login With <span>google</span></p>
+                    </a>
                 </div>
                 <div class="social">
-                    <img src="images/facebook-logo.png" alt="google logo">
-                    <p>Login With <span>Facebook</span></p>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="https://s3-alpha-sig.figma.com/img/d760/cccd/dce9e7bc253435171f7bc7cd4cc5f8f4?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YhQDRtyilPlSVccRtKYBP9SuM7PWgwYPjhVT2~SlUwhxmIkxPxAX5FSwdpescZOsO-hyirkR0V8YvQ8trZmS4QC2TrfswG5RiKd1k7jL2F40qAIzl86LJO0~kymiussKzL~BApmCma8ibLW3OQEvRyYVbc42zEENv~C9njqR-1qD6WkxPz3cS~Ibfbu4Zkpg9IvkMq0VJmzYM2PU~1fPF~ktRCXeDE~KdcC~9bYHh~OWQmuHJIugTsPvDd3ErxMwQXQUhqcNifB2mcF35DUgVVe3Fdes7sl6jKAUyWBX~0NJlchFULbWZLD9lkteof6pIOh9bsbgu9yvKpNFdAKYGA__" alt="Facebook logo">
+                        <p>Login With <span>Facebook</span></p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -289,10 +296,10 @@
             <div class="content">
                 <p>Very good works are waiting for you Login Now!!!</p>
                 <div class="girl">
-                    <img src="images/girl.png" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/f2cb/0bf2/cb645e2cdf55b87168d66fecc570a332?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M1WzouDLO6yrwVJdBK6eBWuWDNHsUDAUuL41HQHhO-KPeT9DU86HOx6SJAO6~qc4y4j~0y~KB7kein3nCAjoyYDRvXoayTrKR1SvVcCs2rHlABDSrCH6vOktVfd1QIRoNKGBTqG282cQCH48XOk4rOUiAtnnOVhJSUVEqa4oDhsbQF9-up3h7GA10PzEfA6HALN8kdRJsjz0OhR~3COYl3NfA6sWnBgmuxDxiL~Ta-HcWvumDbIo0UzuYmf6CFdc8oU~UEEHjST9PXPBAnzunGWtewOb1u896glnPGzGirDRU8mB1JZsfSkyMizquJCZ5FsSuG5MNjPdpF11KlTBqQ__" alt="Girl">
                 </div>
                 <div class="star">
-                    <img src="images/thunderbolt.png" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/2963/5014/fc5d86ae449ee33a8497605771fd569d?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NnJnJN59qMFt916-UpOMTgLCKzRwRcHCIIV643Ke35Vwd-lMLDColT05rflS6bHMsKFn8X5TG5eTJsHHLYA-5eb7f8WgVXPnTqgILY1P0XPe2QkL0KBApcvjj5lGMsIGOW02rqEyZ1vC-Ip3X5RLfoavzJkyes3sCnYTnlbXGMXmTeJxUcerIlmItl82HhOI4nCnnPNqjIGYWXUMI5Z6ZqAbaTge-bAk6sWErMuIez2kk176NDKyFdGpZ2D~E9Ihsa-DyxGr7LjA2aJWV7H0feHpt0Ksy9jduDJc4RYlPlkBTSvx6ooBlFsU4iC5vO9p7HyojCgIeNgvFjlmyhNPpw__" alt="Logo">
                 </div>
             </div>
             
